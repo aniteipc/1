@@ -17,6 +17,8 @@ echo "root:123" >> | chpasswd
 pacman -S --noconfirm  bluez bluez-utils  efibootmgr grub sudo vim wget  zsh iwd networkmanager
 #ttf-dejavu  wqy-zenhei wqy-microhei alacritty xorg xorg-xinit i3  pulseaudio
 
+grub-mkconfig -o /boot/grub/grub.cfg
+grub-install --target=x86_64-efi --efi-directory=esp --bootloader-id=GRUB
 
 systemctl enable bluetooth.service
 systemctl enable NetworkManager.service
