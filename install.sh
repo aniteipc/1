@@ -1,4 +1,5 @@
-#!/bin/bash                                                                                                           1 ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+#!/bin/bash 
+ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 hwclock --systohc
 sed -i '501s/.//'  /etc/locale.gen
 #ÉèÖÃzh_CH.UTF8
