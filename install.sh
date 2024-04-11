@@ -15,7 +15,7 @@ echo "127.0.1.1 zk.localdomain  arch" >> /etc/hosts
 echo "root:123" | chpasswd
 useradd zk -g wheel -m
 echo "zk:123" | chpasswd
-
+chsh -s /bin/zhs
 
 pacman -S --noconfirm  efibootmgr grub sudo vim wget  zsh iwd networkmanager openssh ttf-dejavu  wqy-zenhei wqy-microhei 
 #alacritty xorg xorg-xinit i3  pulseaudio bluez bluez-utils
