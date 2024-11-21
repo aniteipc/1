@@ -5,7 +5,7 @@ if [ "$(id -u)" != "0" ]; then
    exit 1
 fi
 
-default_software="efibootmgr grub sudo wget zsh iwd networkmanager openssh ttf-dejavu  wqy-zenhei wqy-microhei cronie ranger man-db zip unzip"
+default_software="efibootmgr grub sudo wget zsh iwd networkmanager openssh ttf-dejavu  wqy-zenhei wqy-microhei cronie ranger man-db zip unzip htop usbctl zerotier-one"
 client_software="alacritty xorg xorg-xinit i3  pulseaudio bluez bluez-utils google-chrome  polybar picom variety rofi maim  base-devel LightDM mesa lib32-mesa vulkan-intel lib32-vulkan-intel nvidia nvidia-settings lib32-nvidia-utils ntfs-3g ibus ibus-libpinyin vlc"
 username="zk"
 passwd="123"
